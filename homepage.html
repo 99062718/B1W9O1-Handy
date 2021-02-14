@@ -8,35 +8,49 @@
 	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="containerTop">
-		<img src="img/logo.jpg" alt="logo">
-
+	<div class="container">
+		<img src="img/logo.jpg" alt="DavinciLogo">
 		<div class="menu">
-			<ul>
+			<ol>
 				<li>HOME</li>
-				<li>OVER ONS</li>
+				<li class="dropdown">OVER ONS
+					<div class="dropdown-content">
+						<ol>
+							<li>Geschiedenis</li>
+							<li>Deals</li>
+							<li>Diensten</li>
+						</ol>
+					</div>
+				</li>
 				<li>PORTFOLIO</li>
 				<li>NIEUWS</li>
 				<li>CONTACT</li>
-			</ul>
+			</ol>
 		</div>
 	</div>
 
-	<div class="header"></div>
+	<img src="img/header.jpg" alt="header" class="pictureClass" id="header">
 
-	<div class="containerMiddle">
-		<div class="bannerDiv">
-			<img src="img/banner-1.jpg">
+	<div class="containerBoxes">
+		<div id="box1">
+			<img src="img/banner-1.jpg" alt="banner1" id="img1">
+			<p id="text1">GESCHIEDENIS</p>
 		</div>
 
-		<div class="bannerDiv">
-			<img src="img/banner-2.jpg">
+		<div id="box2">
+			<img src="img/banner-2.jpg" alt="banner-2" id="img2">
+			<p id="text2">DEALS</p>
 		</div>
 
-		<div class="bannerDiv">
-			<img src="img/banner-3.jpg">
+		<div id="box3">
+			<img src="img/banner-3.jpg" alt="banner-3" id="img3">
+			<p id="text3">DIENSTEN</p>
 		</div>
 	</div>
 
+	<div class="ribbon">
+		
+	</div>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
