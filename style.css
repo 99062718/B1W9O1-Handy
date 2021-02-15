@@ -3,29 +3,30 @@
 	width: 1000px;
 }
 
-.containerBoxes{
-	margin: 0px auto;
-	width: 1000px;
-	grid-template-rows: 300px, 300px, 300px;
-	margin-top: 625px;
+p, h1, li{
+	color: white;
+	font-family: 'Archivo';
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+}
+
+/* menu */
+
+li:hover{
+	background-color: #ffe718;
+	color: black;
 }
 
 .menu{
 	margin-left: 25px;
-	background-color: gray;
+	background-color: #222931;
 	width: 950px;
 	height: 35px;
 }
 
 .menu ol{
 	height: 20px;
-}
-
-p, h1, li{
-	font-family: 'Archivo';
-	font-size: 16px;
-	line-height: 24px;
-	font-weight: 500;
 }
 
 .menu li{
@@ -46,7 +47,7 @@ p, h1, li{
 .dropdown-content{
   	display: none;
   	position: absolute;
-  	background-color: gray;
+  	background-color: #222931;
  	width: 160px;
  	height: 115px;
  	z-index: 1;
@@ -67,9 +68,7 @@ p, h1, li{
 
 .dropdown:hover .dropdown-content {display: block;}
 
-li:hover{
-	background-color: yellow;
-}
+/* large pictures */
 
 .pictureClass{
 	position: absolute;
@@ -80,6 +79,46 @@ li:hover{
 
 #header{
 	top: 70px;
+}
+
+#footer{
+	top: 1250px;
+}
+
+/* boxes */
+
+.containerBoxesGeneral{
+	margin: 0px auto;
+	width: 1000px;
+	grid-template-rows: 300px, 300px, 300px;
+}
+
+.containerBoxes{
+	margin-top: 625px;
+}
+
+.containerBoxes2{
+	margin-top: 1420px;
+}
+
+.containerBoxes2 svg{
+	width: 125px;
+	height: 90px;
+	float: left;
+}
+
+.containerBoxes2 h1{
+	color: black;
+	font-size: 22px;
+	font-weight: 600;
+	float: left;
+}
+
+.containerBoxes2 p{
+	color: black;
+	font-size: 14px;
+	font-weight: 600;
+	float: left;
 }
 
 .box1{
@@ -114,13 +153,27 @@ li:hover{
 	bottom: 150px;
 }
 
+#box4, #box5, #box6{
+	background-color: #ffe718;
+	width: 300px;
+	height: 100px;
+	padding-top: 10px;
+	float: left;
+}
+
+/* ribbon */
+
 .ribbon{
-	background-color: yellow;
+	background-color: #ffe718;
 	height: 150px;
 	top: 1000px;
+	position: absolute;
+	width: 100%;
+	left: 0px;
 }
 
 .ribbon p{
+	color: #222931;
 	margin-left: 10px;
 	margin-top: 65px;
 	float: left;
@@ -129,6 +182,7 @@ li:hover{
 }
 
 .ribbon h1{
+	color: #222931;
 	margin-left: 200px;
 	margin-top: 60px;
 	float: left;
@@ -137,6 +191,7 @@ li:hover{
 }
 
 .ribbon button{
+	color: #222931;
 	width: 200px;
 	height: 40px;
 	margin-left: 700px;
@@ -146,6 +201,13 @@ li:hover{
 	font-weight: 500;
 }
 
-#footer{
-	top: 1250px;
+/* bottom text divs */
+
+.textDiv1{
+
+}
+
+.textDiv1 h1{
+	font-size: 24px;
+	font-weight: 600;
 }
