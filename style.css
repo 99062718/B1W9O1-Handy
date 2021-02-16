@@ -203,11 +203,60 @@ li:hover{
 
 /* bottom text divs */
 
-.textDiv1{
-
+.container2{
+	margin-bottom: 200px;
+	padding-top: 200px;
+	margin: 0px auto;
+	width: 1000px;
 }
 
-.textDiv1 h1{
+.textFooter1{
+	float: left;
+	width: 500px;
+}
+
+.textFooter2{
+	float: right;
+	width: 160px;
+	margin-right: 170px;
+}
+
+.container2 h1, .footerMijnNaam h1{
+	color: black;
 	font-size: 24px;
 	font-weight: 600;
+}
+
+.container2 p, .footerMijnNaam p{
+	color: black;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.textFooter2 p{
+	margin-top: 0px;
+	text-align: center;
+}
+
+.textFooter2 svg{
+	float: left;
+	margin-bottom: 5px;
+	color: #aeb6be;
+	height: 30px;
+	width: 20px;
+}
+
+.footerMijnNaam{
+	margin-top: 270px;
+	background-color: #222931;
+	width: 100%;
+	height: 60px;
+}
+
+.footerMijnNaam p{
+	color: white;
+	float: right;
+	margin-right: 200px;
+	margin-top: 23px;
 }
