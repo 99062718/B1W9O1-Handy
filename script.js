@@ -1,3 +1,5 @@
+var page;
+
 function fadeAway1(){
 	document.getElementById("text1").style.opacity = "1";
 	document.getElementById("img1").style.opacity = "0.3";
@@ -74,12 +76,15 @@ function buttonNotHover(){
 	document.getElementById("button").style.color = "black";
 }
 
-document.getElementById("box1").addEventListener("mouseover", fadeAway1);
-document.getElementById("box1").addEventListener("mouseout", fadeBack1);
-document.getElementById("box2").addEventListener("mouseover", fadeAway2);
-document.getElementById("box2").addEventListener("mouseout", fadeBack2);
-document.getElementById("box3").addEventListener("mouseover", fadeAway3);
-document.getElementById("box3").addEventListener("mouseout", fadeBack3);
+if(page == "home"){
+	document.getElementById("box1").addEventListener("mouseover", fadeAway1);
+	document.getElementById("box1").addEventListener("mouseout", fadeBack1);
+	document.getElementById("box2").addEventListener("mouseover", fadeAway2);
+	document.getElementById("box2").addEventListener("mouseout", fadeBack2);
+	document.getElementById("box3").addEventListener("mouseover", fadeAway3);
+	document.getElementById("box3").addEventListener("mouseout", fadeBack3);
+}
+
 document.getElementById("box4").addEventListener("mouseover", invert1);
 document.getElementById("box4").addEventListener("mouseout", revert1);
 document.getElementById("box5").addEventListener("mouseover", invert2);

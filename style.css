@@ -13,7 +13,7 @@ p, h1, li{
 
 /* menu */
 
-li:hover{
+li:hover, a:hover{
 	background-color: #ffe718;
 	color: black;
 }
@@ -29,13 +29,20 @@ li:hover{
 	height: 20px;
 }
 
-.menu li{
+.menu li, .menu a{
 	font-size: 12px;
 	padding: 4px;
 	margin-left: 20px;
 	float: left;
 	display: inline;
 	font-weight: 500;
+}
+
+.menu a{
+	text-decoration: none;
+	color: white;
+	padding: 0px;
+	margin-left: 10px;
 }
 
 .menu svg{
@@ -54,7 +61,7 @@ li:hover{
  	margin-top: 4px;
 }
 
-.dropdown-content li{
+.dropdown-content li, .dropdown-content a{
 	margin-left: 0px;
 	font-size: 16px;
   	display: block;
@@ -101,20 +108,24 @@ li:hover{
 	margin-top: 1420px;
 }
 
-.containerBoxes2 svg{
+.containerBoxes3{
+	margin-top: 350px;
+}
+
+.containerBoxesGeneral svg{
 	width: 125px;
 	height: 90px;
 	float: left;
 }
 
-.containerBoxes2 h1{
+.containerBoxesGeneral h1{
 	color: black;
 	font-size: 22px;
 	font-weight: 600;
 	float: left;
 }
 
-.containerBoxes2 p{
+.containerBoxesGeneral p{
 	color: black;
 	font-size: 14px;
 	font-weight: 600;
@@ -166,8 +177,7 @@ li:hover{
 .ribbon{
 	background-color: #ffe718;
 	height: 150px;
-	top: 1000px;
-	position: absolute;
+	margin-top: 50px;
 	width: 100%;
 	left: 0px;
 }
@@ -260,3 +270,39 @@ li:hover{
 	margin-right: 200px;
 	margin-top: 23px;
 }
+
+/* textDiv */
+
+.textDiv{
+	margin-top: 650px !important;
+	width: 900px;
+	margin: 0px auto;
+}
+
+.textDiv h1{
+	color: black;
+	font-size: 34px;
+	font-weight: 
+}
+
+.textDiv p{
+	color: black;
+}
+
+#textHover1, #textHover2, #textHover3{
+	color: yellow;
+}
+
+.dropdown-content2, .dropdown-content3, .dropdown-content4{
+  	display: none;
+  	position: absolute;
+  	background-color: #222931;
+ 	width: 50px;
+ 	height: 50px;
+ 	z-index: 1;
+ 	margin-top: 4px;
+}
+
+#textHover1:hover .dropdown-content2 {display: block;}
+#textHover2:hover .dropdown-content3 {display: block;}
+#textHover3:hover .dropdown-content4 {display: block;}
